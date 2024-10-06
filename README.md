@@ -15,7 +15,7 @@ El diagrama de Bode es una representación gráfica de cómo varía la **gananci
 - **Diagrama de fase**: Muestra el desfase (en grados) entre la señal de entrada y salida del sistema frente a la frecuencia.
 
    $$
-   \text{Fase (grados)} = \arg \left( G(j\omega) \right) \times \frac{180^\circ}{\pi}
+   \text{Fase (grados)} = \arg \left|( G(j\omega) \right)| \times \frac{180^\circ}{\pi}
    $$
 
 En el diseño de redes de atraso, el diagrama de Bode permite:
