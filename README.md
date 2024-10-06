@@ -1,14 +1,14 @@
 Diseño de redes de atraso por análisis en frecuencia
 
-## Diagrama de Bode
+## 1. Diagrama de Bode
 
 El diagrama de Bode es una representación gráfica de cómo varía la **ganancia** y la **fase** de un sistema en función de la frecuencia. Es crucial para el análisis en frecuencia de sistemas de control, ya que permite evaluar su estabilidad y el comportamiento ante diferentes señales.
 
 - **Diagrama de ganancia**: Muestra la magnitud de la respuesta del sistema en dB frente a la frecuencia.
 
-   ```math
+   \[
    \text{Ganancia (dB)} = 20 \log_{10} \left| G(j\omega) \right|
-   
+   \]
 
    Donde \( G(j\omega) \) es la función de transferencia del sistema.
 
@@ -24,7 +24,7 @@ En el diseño de redes de atraso, el diagrama de Bode permite:
 
 ---
 
-## Compensadores
+## 2. Compensadores
 
 Los compensadores son elementos de control que se añaden al sistema para mejorar su rendimiento, corregir errores y aumentar la estabilidad.
 
@@ -50,7 +50,7 @@ Los compensadores son elementos de control que se añaden al sistema para mejora
 
 ---
 
-## Control PID
+## 3. Control PID
 
 Un controlador PID (Proporcional, Integral y Derivativo) puede considerarse como una combinación de compensadores de adelanto y atraso.
 
@@ -69,7 +69,7 @@ El controlador PID puede ajustarse para tener el **efecto de una red de atraso-a
 
 ---
 
-## Márgenes de ganancia y fase
+## 4. Márgenes de ganancia y fase
 
 Estos dos márgenes son fundamentales para evaluar la **estabilidad** de un sistema en lazo cerrado:
 
@@ -93,7 +93,7 @@ Estos márgenes se observan fácilmente en un diagrama de Bode y son objetivos c
 
 ---
 
-## Diseño de Redes de Atraso
+## 5. Diseño de Redes de Atraso
 
 El diseño de **redes de atraso** se utiliza para mejorar el error de estado estacionario sin sacrificar significativamente el margen de estabilidad del sistema.
 
@@ -121,7 +121,7 @@ El diseño implica ajustar \( T_1 \) y \( T_2 \) para obtener los márgenes de e
 
 ---
 
-## Metodología de diseño de redes de atraso
+## 6. Metodología de diseño de redes de atraso
 
 La metodología incluye varios pasos para ajustar correctamente una red de atraso:
 
@@ -148,6 +148,8 @@ Este proceso es iterativo, ajustando \( K_p \) y \( T_1 \) hasta cumplir con los
 
 ## Ejemplos de Redes de Atraso
 
+Aquí se presentan dos ejemplos de cómo diseñar redes de atraso para diferentes situaciones:
+
 ### **Ejemplo 1: Red de Atraso para Mejorar el Error en Estado Estacionario**
 
 Función de transferencia original:
@@ -168,4 +170,22 @@ Nueva función de transferencia en lazo abierto:
 G'(s) = \frac{1 + 0.1s}{s^2 (1 + s)^2}
 \]
 
-### **Ejemplo 2: Red de Atraso para A
+### **Ejemplo 2: Red de Atraso para Aumentar el Margen de Estabilidad**
+
+Función de transferencia original:
+
+\[
+G(s) = \frac{10}{s(s + 5)}
+\]
+
+Después de agregar una red de atraso con \( T_1 = 0.2 \) y \( T_2 = 2 \):
+
+\[
+C(s) = \frac{1 + 0.2s}{1 + 2s}
+\]
+
+Nueva función de transferencia:
+
+\[
+G'(s) = \frac{(1 + 0.2s) \cdot 10}{s(s + 5)(1 + 2s)}
+\]
