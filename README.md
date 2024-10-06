@@ -10,6 +10,7 @@ El diagrama de Bode es una representación gráfica de cómo varía la **gananci
    \text{Ganancia (dB)} = 20 \log_{10} \left| G(j\omega) \right|
   $$
 
+
    Donde \( G(j\omega) \) es la función de transferencia del sistema.
 
 - **Diagrama de fase**: Muestra el desfase (en grados) entre la señal de entrada y salida del sistema frente a la frecuencia.
@@ -18,11 +19,17 @@ El diagrama de Bode es una representación gráfica de cómo varía la **gananci
    \text{Fase (grados)} = \arg \left|( G(j\omega) \right|) \times \frac{180^\circ}{\pi}
   $$
 
+![WhatsApp Image 2024-10-05 at 10 07 56 PM](https://github.com/user-attachments/assets/16dd92d4-9a1d-4603-9b0f-4e9020188ef7)
+
 En el diseño de redes de atraso, el diagrama de Bode permite:
 - **Evaluar el margen de ganancia y margen de fase**, que están relacionados con la estabilidad del sistema.
 - **Corregir el error de estado estacionario** midiendo cómo el sistema responde en frecuencias bajas.
 
+Con respecto a respuesta temporal
+![WhatsApp Image 2024-10-05 at 10 08 18 PM](https://github.com/user-attachments/assets/6a698851-07e1-4289-974f-786c63e9c48d)
+
 ---
+
 
 ## 2. Compensadores
 
