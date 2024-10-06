@@ -6,9 +6,9 @@ El diagrama de Bode es una representación gráfica de cómo varía la **gananci
 
 - **Diagrama de ganancia**: Muestra la magnitud de la respuesta del sistema en dB frente a la frecuencia.
 
-   \[
+   
    \text{Ganancia (dB)} = 20 \log_{10} \left| G(j\omega) \right|
-   \]
+   
 
    Donde \( G(j\omega) \) es la función de transferencia del sistema.
 
