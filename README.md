@@ -16,7 +16,7 @@ El diagrama de Bode es una representación gráfica de cómo varía la **gananci
 
    $$
    \text{Fase (grados)} = \arg \left( G(j\omega) \right) \times \frac{180^\circ}{\pi}
-   $$
+    $$
 
 En el diseño de redes de atraso, el diagrama de Bode permite:
 - **Evaluar el margen de ganancia y margen de fase**, que están relacionados con la estabilidad del sistema.
