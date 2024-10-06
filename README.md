@@ -112,6 +112,8 @@ El procedimiento para diseñar redes de atraso en **control discreto** incluye:
    
 3. **Cálculo de la frecuencia de cruce de ganancia**: Este es un punto clave en el diseño de compensadores, ya que se busca una frecuencia de cruce que permita mejorar la estabilidad sin aumentar demasiado el error.
 
+![WhatsApp Image 2024-10-05 at 10 08 50 PM](https://github.com/user-attachments/assets/6ed81cb6-70f4-4417-99da-267138581912)
+
 La función de transferencia de una **red de atraso** es:
 
 $$
